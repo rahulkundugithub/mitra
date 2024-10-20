@@ -1,0 +1,9 @@
+// Example of sending the file to a server
+            axios
+                .post('http://localhost:5000/api/upload', formData, {
+                    headers: { 'Content-Type': 'multipart/form-data' },
+                })
+                .then((response) => console.log('File uploaded successfully:', response.data))
+                .catch((error) => console.error('File upload error:', error));
+
+                7595830666
